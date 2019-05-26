@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Muhammad shafiq">
+    <title>Document</title>
+    <link rel="stylesheet" href="advanced-custom-filter.css">
+</head>
+<body>
+    <div class="left-bar--filter">
+        <div class="filter--header">
+            <div class="filter--title filter--left">
+                <a href="javascript:void(0);" onclick="filterHideShow();" class="filter--hide-or-show">Hide</a>
+            </div>
+            <div class="filter--right">
+                <div class="filter--clear">
+                    <button class="filter--clear-btn">Reset all</button>
+                </div>
+            </div>
+            <div class="clearFix"></div>
+        </div>
+        <div class="filter--contents show">
+            <div class="filter--section">
+                <div class="filter--header">
+                    <div class="filter--left--header-content filter--title filter--left">Collections</div>
+                    <div class="filter--right--header-content filter--right">
+                        <div class="filter--clear">
+                            <button class="filter--clear-btn">clear</button>
+                        </div>
+                    </div>
+                    <div class="clearFix"></div>
+                </div>
+                <div class="filter--card filter--contents-section">
+                    <div class="filter--items items-view--list">
+                        <div class="filter--item">
+                            <label class="filter--label-container-radio">
+                                    <input type="radio" name="filter--radio" class="filter--radio" checked="checkbox">
+                                    <span class="filter--checkmark-radio"></span>
+                                    <div class="filter--option-title">All Collections</div>
+                            </label>
+                            <div class="filter--item-count">(1852)</div>
+                        </div>
+                        
+                        <div class="filter--item">
+                            <label class="filter--label-container-radio">
+                                    <input type="radio" name="filter--radio" class="filter--radio">
+                                    <span class="filter--checkmark-radio"></span>
+                                    <div class="filter--option-title">Tops</div>
+                            </label>
+                            <div class="filter--item-count">(180)</div>
+                        </div>
+                        
+                        <div class="filter--item">
+                            <label class="filter--label-container-radio">
+                                    <input type="radio" name="filter--radio" class="filter--radio">
+                                    <span class="filter--checkmark-radio"></span>
+                                    <div class="filter--option-title">Shoes</div>
+                            </label>
+                            <div class="filter--item-count">(192)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter--section">
+                <div class="filter--header">
+                    <div class="filter--title filter--left">Product Type</div>
+                    <div class="filter--right">
+                        <div class="filter--clear">
+                            <button class="filter--clear-btn">clear</button>
+                        </div>
+                    </div>
+                    <div class="clearFix"></div>
+                </div>
+                <div class="filter--card filter--contents-section">
+                    <div class="filter--items items-view--list">
+                        <div class="filter--item">
+                            <label class="filter--label-container-checkbox">
+                                    <input type="checkbox" name="filter--checkbox" class="filter--checkbox" checked="checkbox">
+                                    <span class="filter--checkmark-checkbox"></span>
+                                    <div class="filter--option-title">Shoes</div>
+                            </label>
+                            <div class="filter--item-count">(912)</div>
+                        </div>
+                        
+                        <div class="filter--item">
+                            <label class="filter--label-container-checkbox">
+                                    <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                    <span class="filter--checkmark-checkbox"></span>
+                                    <div class="filter--option-title">Tops</div>
+                            </label>
+                            <div class="filter--item-count">(128)</div>
+                        </div>
+                        
+                        <div class="filter--item">
+                            <label class="filter--label-container-checkbox">
+                                    <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                    <span class="filter--checkmark-checkbox"></span>
+                                    <div class="filter--option-title">Caps</div>
+                            </label>
+                            <div class="filter--item-count">(12)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="filter--section">
+                <div class="filter--header">
+                    <div class="filter--title filter--left">Vendor</div>
+                    <div class="filter--right">
+                        <div class="filter--clear">
+                            <button class="filter--clear-btn">clear</button>
+                        </div>
+                    </div>
+                    <div class="clearFix"></div>
+                </div>
+                <div class="filter--card filter--contents-section">
+                    <div class="filter--items items-view--list">
+                        <div class="filter--item">
+                            <label class="filter--label-container-checkbox">
+                                    <input type="checkbox" name="filter--checkbox" class="filter--checkbox" checked="checkbox">
+                                    <span class="filter--checkmark-checkbox"></span>
+                                    <div class="filter--option-title">Shan</div>
+                            </label>
+                            <div class="filter--item-count">(912)</div>
+                        </div>
+                        
+                        <div class="filter--item">
+                            <label class="filter--label-container-checkbox">
+                                    <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                    <span class="filter--checkmark-checkbox"></span>
+                                    <div class="filter--option-title">Sofi</div>
+                            </label>
+                            <div class="filter--item-count">(128)</div>
+                        </div>
+                        
+                        <div class="filter--item">
+                            <label class="filter--label-container-checkbox">
+                                    <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                    <span class="filter--checkmark-checkbox"></span>
+                                    <div class="filter--option-title">Kisan</div>
+                            </label>
+                            <div class="filter--item-count">(12)</div>
+                        </div>
+                        
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+                            
+                            <div class="filter--item">
+                                <label class="filter--label-container-checkbox">
+                                        <input type="checkbox" name="filter--checkbox" class="filter--checkbox">
+                                        <span class="filter--checkmark-checkbox"></span>
+                                        <div class="filter--option-title">Kisan</div>
+                                </label>
+                                <div class="filter--item-count">(12)</div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="advanced-custom-filter.js"></script>
+</body>
+</html>

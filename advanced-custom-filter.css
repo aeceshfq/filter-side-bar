@@ -1,0 +1,214 @@
+
+.left-bar--filter{
+    width: 25%;
+    margin-left: 30%;
+    /* border: 1px solid #000; */
+}
+
+.filter--contents{
+
+}
+
+.filter--section{
+    padding: 0;
+    margin: 0;
+}
+
+.filter--left{
+    float: left;
+}
+
+.filter--right{
+    float: right;
+}
+
+.filter--clear-btn{
+    border: 1px solid #eee;
+    border-radius: 2rem;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.filter--header{
+    /* background: lightblue; */
+    padding: 8px;
+    /* display: flex; */
+}
+
+.filter--card {
+    padding: 8px;
+    max-height: 140px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.filter--items{
+    display: block;
+}
+
+.filter--item{
+    display: flex;
+    margin: 0px 0px 4px 0px;
+    line-height: 1.6rem;
+}
+
+.filter--label-container-checkbox{
+    display: block;
+    position: relative;
+    padding-left: 2.2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.filter--checkmark-checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #464646;
+    border-radius: 0.2rem;
+    /* background-color: #eee; */
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.filter--checkmark-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Hide the browser's default checkbox */
+.filter--label-container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+/* Show the checkmark when checked */
+.filter--label-container-checkbox input:checked ~ .filter--checkmark-checkbox:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.filter--label-container-checkbox .filter--checkmark-checkbox:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #464646;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+  
+/* Create a custom radio button */
+.filter--label-container-radio{
+    display: block;
+    position: relative;
+    padding-left: 2.2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.filter--checkmark-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #464646;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.filter--checkmark-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Hide the browser's default checkbox */
+.filter--label-container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+/* Show the checkmark when checked */
+.filter--label-container-radio input:checked ~ .filter--checkmark-radio:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.filter--label-container-radio .filter--checkmark-radio:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #464646;
+}
+
+.filter--item-count{
+    margin: 0px 0px 0px 4px;
+}
+
+.filter--right--header-content{
+    display: flex;
+}
+
+.filter--right--header-content{
+    display: flex;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.clearFix{
+    clear: both;
+}
+
+/* filter custom scroll bar */
+.left-bar--filter ::-webkit-scrollbar{
+    width: 10px;
+}
+
+.left-bar--filter ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px #808080;
+    border-radius: 10px;
+}
+
+.left-bar--filter ::-webkit-scrollbar-thumb{
+    background: #808080;
+    border-radius: 10px;
+}
+
+
+.left-bar--filter ::-webkit-scrollbar-thumb:hover{
+    background: #000000;
+}
